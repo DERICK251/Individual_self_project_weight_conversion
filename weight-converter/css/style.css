@@ -1,0 +1,67 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+main {
+    padding: 40px 200px;
+}
+
+.input, .output {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+
+}
+
+.input .source-unit, .destination-unit {
+    width: 50%;
+}
+
+.switch {
+    margin: 0px 10px;
+    padding:0px 10px;
+    width: 80px;
+}
+
+.input .source-unit select {
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.input .destination-unit select {
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.output .input-text-box, .output-text-box {
+    width: 50%;
+    /* border: 2px solid red; */
+}
+
+
+.output .input-text-box input {
+    padding: 10px 20px;
+    width: 90%;
+    margin-right: 10px;
+
+}
+
+.output .output-text-box {
+    padding-left: 50px;
+}
+
+.output .output-text-box textarea {
+    resize: none;
+    padding: 10px 20px;
+    width: 100%;
+}

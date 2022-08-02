@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Conversion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    
+    <header>
+        <h1>Weight Converter</h1>
+    </header>
+    
+    <main>
+        <div class="input">
+
+        <div class="source-unit">
+                <select name="source-unit" id="source-unit" onchange="initConvert()">
+                    <option value="kg">Kilogram</option>
+                    <option value="gm">gram</option>
+                    <option value="ml">milligram</option>
+                </select>
+            </div>
+    
+            <img id="switch" class="switch" onclick="switchFnx()" src="./images/switch-arrow.png" alt="">
+    
+            <div class="destination-unit" onchange="initConvert()">
+                <select name="destination-unit" id="destination-unit">
+                    <option value="kg">Kilogram</option>
+                    <option value="gm">gram</option>
+                    <option value="ml">milligram</option>
+                </select>
+            </div>
+        </div>
+        <div class="output">
+            <div class="input-text-box">
+                <input type="text" id="input-value" type="number" placeholder="Input value" onkeypress="return isNumberKey(event)" onkeyup="initConvert()">
+            </div>
+
+            <div class="output-text-box">
+                <textarea id="output-text-field" cols="25" rows="2" placeholder="Converted value" disabled="disabled"></textarea>
+            </div>
+        </div>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+</html>
